@@ -1,74 +1,624 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.content {
-  position: fixed;
-  background: rgba(144, 115, 115, 0.5);
-  width: 100%;
-  height: 100%;
-}
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
+    <!-- Title -->
+    <title>On The Street of Chennai</title>
 
-.fa:hover {
-    opacity: 0.7;
-}
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="img/core-img/favicon.ico">
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
+    <style>
+        .moto-text-container {
+            margin: auto;
+        }
 
-.fa-instagram {
-  background: #7c1b8e;
-  color: white;
-}
-</style>
+        @media only screen and (max-width: 767px) {
+            .moto-heading {
+                margin-bottom: 10px;
+            }
+
+            .moto-text {
+                font-size: x-large;
+                font-weight: 800;
+            }
+
+            .moto-text-container {
+                margin: auto;
+                padding-top: 10px;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
-  <video autoplay muted loop id="myVideo">
-    <source src="content\bg.mp4" type="video/mp4">
-  </video>
-<div class="content">
-<div class="row">
- <div class="col-lg-3"></div>
- <div class="col-lg-6"><center><img src="content\Logo.png" style="width: 50%;" alt="OntheStreetsOfChennai"></center></div>
- <div class="col-lg-3"></div>
-</div>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
-<div class="row">
-  <div class="col-lg-3"></div>
-  <div class="col-lg-6"><center><h1 style="font-size:55px; font-family: open sans condensed; color: white;">UNDER <br> CONSTRUCTION</h1></center></div>
-  <div class="col-lg-3"></div>
- </div>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
- <div class="row">
-  <div class="col-lg-5"></a></div>
-  <div class="col-lg-2"><center><a href="https://www.facebook.com/OnTheStreetsOfChennai" class="fa fa-facebook"></a><a href="https://www.instagram.com/onthestreetsofchennai" class="fa fa-instagram"></a></center></div>
- </div>
-  
-</div>
- 
- 
+                        <!-- Nav brand -->
+                        <div style="margin-right: 30px;">
+                            <a href="index.html" class="nav-brand text-center float-left" style="margin-right: 0;"><img src="img/core-img/logo.png" alt=""></a>
+                        </div>
 
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="Awe50meWeekend.html">Awe50me Weekend</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <!-- <li><a href="about.html">About us</a></li> -->
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">On The Streets <br> Of Chennai<span>On The
+                                        Streets <br> Of Chennai</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#discover"
+                                    class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">On The Streets <br> Of Chennai <span>On The
+                                        Streets <br> Of Chennai</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#discover"
+                                    class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-3.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">On The Streets <br> Of Chennai <span>On The
+                                        Streets <br> Of Chennai</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#discover"
+                                    class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-4.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">On The Streets Of Chennai <span>On The
+                                        Streets Of Chennai</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#discover"
+                                    class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Buy Now Area Start ##### -->
+    <section id="discover" class="oneMusic-buy-now-area has-fluid bg-gray section-padding-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2 moto-heading">
+                        <h2>Why do we exist?</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="featured-artist-thumb">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/bg-img/index1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/bg-img/index2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/bg-img/index3.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-center moto-text-container">
+                    <p class="h1 moto-text">To make this world a happier place!</p>
+                    <br>
+                    <p class="h1 moto-text">Promote street music culture to spread smiles, happiness and positivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Buy Now Area End ##### -->
+
+    <section class="miscellaneous-area section-padding-50-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2 moto-heading" style="margin-bottom: 50px;">
+                        <h2>About us</h2>
+                    </div>
+
+                    <div class="oneMusic-tabs-content">
+                        <ul class="nav nav-tabs nav-center" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active show" id="tab--1" data-toggle="tab" href="#tab1" role="tab"
+                                    aria-controls="tab1" aria-selected="true">Briefly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab"
+                                    aria-controls="tab2" aria-selected="false">Reminiscence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab"
+                                    aria-controls="tab3" aria-selected="false">Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tab-content mb-100" id="myTabContent">
+                                <div class="tab-pane fade active show" id="tab1" role="tabpanel"
+                                    aria-labelledby="tab--1">
+                                    <div class="oneMusic-tab-content">
+                                        <!-- Tab Text -->
+                                        <div class="oneMusic-tab-text">
+                                            <br>
+                                            <p>‘On the Streets of Chennai’ is a motley, vibrant community of musicians, seeking to give back and improve the busking culture of Chennai by spreading smiles and positivity through music. We are an organic, ever-loving culture adventure. We have a fine blend of professional and amateur singers, from a range of musical backgrounds and influences, contributing to the community’s strength and diversity. As a bunch of buskers, our community enjoys the idea of breaking into spontaneous music, reducing barriers across strangers and bridging the gap between the audience and the artist. In the course of a year, it has grown exponentially, membership and otherwise, and OTS is now a close-knit family. We warmly welcome newcomers, be it singers, instrumentalists, percussionists, guitarists or just anyone with an ear for good music, and find joy in working, ideating, and collaborating with them.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                    <div class="oneMusic-tab-content">
+                                        <!-- Tab Text -->
+                                        <div class="oneMusic-tab-text">
+                                            <br>
+                                            <p>What started as a small group of five to seven people in January 2019, now houses almost 150 members and 2000 followers. Members of On The Streets have been performing originals, covers and remixes, spanning genres, in public spaces since its inception and spreading smiles along the way. Some of the prestigious venues include Railway Stations, Metro stations, Beaches, Parks, Pondy Bazaar and various malls dotted across the city.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                                    <div class="oneMusic-tab-content">
+                                        <!-- Tab Text -->
+                                        <div class="oneMusic-tab-text">
+                                            <br>
+                                            <p>'On The Streets' does not accept monetary benefits from members or venue partners. Ensuring pulling off hassle-free and hindrance-free gigs to the public and sorting out permissions from the required authorities in advance is key. We also adhere to a zero-tolerance policy to negativity, within and outside the community. The community works with the motto of fairness towards every member. The members strongly believe that music is a democratic space that should be accessible and available for all and OTS strives to adhere to the same.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- ##### Featured Artist Area Start ##### -->
+    <section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed"
+        style="background-image: url(img/bg-img/bg_img_n.jpeg);">
+        <div class="container">
+            <div class="row align-items-end">
+
+                <div class="col-9 offset-md-3">
+                    <p class="h1 mb-30" style="color: white;letter-spacing: 10px;">Our Guiding values</p>
+                </div>
+                <div class="col-9 offset-md-3">
+                    <div class="featured-artist-content">
+
+                        <div class="white">
+                            <p style="font-size:large">INSPIRE – Inspire people to be positive.</p>
+                            <p style="font-size:large">PRIDE – Take pride in what we do.</p>
+                            <p style="font-size:large">ONLY POSITIVITY – Fairness to everyone.</p>
+                            <p style="font-size:large">GROWTH – Make sure we and people around get better.</p>
+                            <br>
+                            <p class="h1 mb-30" style="letter-spacing: 10px;">Why guiding values ?</p>
+                            <p style="font-size:large">To help us operate independently and make decisions on our own in
+                                difficult situations.</p>
+                        </div>
+
+                        <!-- Section Heading -->
+                        <!-- <div class="section-heading white text-left mb-30">
+                            <h2>Guiding values</h2>
+                        </div>
+                        <p>1. INSPIRE – Inspire people to be positive and be leaders.</p>
+                        <p>2. PRIDE – Take pride in what we do.</p>
+                        <p>3. ONLY POSITIVITY – Fairness to everyone.</p>
+                        <p>4. GROWTH – Make sure we and people around get better.</p>
+                        <p><strong>Why guiding values ?</strong></p>
+                        <p>To help us operate independently and make decisions on our own in difficult situations.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Featured Artist Area End ##### -->
+
+    <!-- ##### Miscellaneous Area Start ##### -->
+    <section class="miscellaneous-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="featured-artist-thumb">
+                        <img src="img/bg-img/index4.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="new-hits-area mb-30">
+                        <div class="section-heading text-left wow fadeInUp" style="margin-bottom: 15px;" data-wow-delay="50ms">
+                            <h2>INSPIRE</h2>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="100ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>Each member of OTS is a leader and will constantly inspire others for great
+                                        things. E.g. Good vibes, Smiles, Good singing, Style, RAOK etc.,</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="150ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We will be vulnerable to be infected by good things.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="200ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We will avoid negativity like poison.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="new-hits-area mb-30">
+                        <div class="section-heading text-left wow fadeInUp" style="margin-bottom: 15px;" data-wow-delay="50ms">
+                            <h2>PRIDE</h2>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="100ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We will take pride in doing Kick-ass stuffs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="150ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>Even when things go wrong, we will take pride in the learning that makes us
+                                        improve.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="150ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="new-hits-area mb-30">
+                        <div class="section-heading text-left wow fadeInUp" style="margin-bottom: 15px;" data-wow-delay="50ms">
+                            <h2>POSITIVITY</h2>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="100ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>Our tolerance for negativity, politics will be very low.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="150ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We will be fair to ourselves and others at every situation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="200ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>No favors or obligations expected here- please have something to take away from
+                                        OTS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="250ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We strictly do not accept money from our audience, venue partners or members.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="300ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We contribute to the society as proud givers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="350ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We do not fight for publicity – Great performers can’t be ignored by media. Focus
+                                        is
+                                        to get great at our skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="400ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We thank very often as a habit and never complain.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="450ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>If you have a problem, lets fix it. We don’t crib here as leaders and doers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="new-hits-area mb-30">
+                        <div class="section-heading text-left wow fadeInUp" style="margin-bottom: 15px;" data-wow-delay="50ms">
+                            <h2>GROWTH</h2>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="100ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We will constantly show growth: As a leader, in music, personality,
+                                        communication, managing things and lifestyle.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="150ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>Consistency is the key.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="200ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>Feedback is the crux. Being open to taking feedback and working on them is
+                                        essential for the performers.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="250ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>Positive feedback will encourage us to continue the good job.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="300ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>'Can be better' feedback will make us better.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="350ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We respect our audience and we owe them the best.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp"
+                            data-wow-delay="400ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="content-">
+                                    <p>We respect our performers and co-members, they get better through honest feedback
+                                        and practice.</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="featured-artist-thumb">
+                        <img src="img/bg-img/index5.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Miscellaneous Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="Awe50meWeekend.html">Awe50me Weekend</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <!-- <li><a href="about.html">About us</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 </body>
+
 </html>
